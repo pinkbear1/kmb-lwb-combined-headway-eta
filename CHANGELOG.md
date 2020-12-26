@@ -1,3 +1,13 @@
+## [1.9.0] (2020-10-16)
+* use module-based JS and async / await
+
+## [1.8.3] (2020-10-01)
+* cache common route list
+
+## [1.8.2] (2020-08-31)
+* do not show past ETAs
+* prevent Javascript error when searching TRAM
+
 ## [1.8.1] (2020-08-04)
 * prevent showing 403 errors with expired API key
 

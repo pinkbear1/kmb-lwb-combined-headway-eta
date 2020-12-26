@@ -1,0 +1,30 @@
+{
+    "root" : true,
+    "parser" : "@typescript-eslint/parser",
+    "plugins" : [
+        "@typescript-eslint"
+    ],
+    "parserOptions" : {
+        "project" : ["./tsconfig.json"]
+    },
+    "extends" : [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "overrides" : [
+        {
+            "rules" : {
+                "no-debugger" : "off"
+            },
+            "files" : "**"
+        },
+        {
+            "files" : "*.js",
+            "rules": {
+                "@typescript-eslint/no-var-requires": "off"
+            }
+        }
+    ]
+}
